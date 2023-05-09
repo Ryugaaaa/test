@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import logo from "./../assets/img/logo.png";
-import icon from "./../assets/img/SearchIcon.png";
+import logo from "./../../img/logo.png";
+import icon from "./../../img/SearchIcon.png";
 
 const Section = styled.div`
   display: flex;
@@ -14,12 +14,6 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
-
-const Links = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 200px;
 `;
 
 const LogoContainer = styled.div`
@@ -40,9 +34,13 @@ const Text = styled.p`
   line-height: 27px;
 `;
 
+const Links = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const List = styled.ul`
   display: flex;
-  gap: 30px;
   list-style: none;
 `;
 
@@ -50,6 +48,7 @@ const ListItem = styled.li`
   cursor: pointer;
   font-weight: 700;
   font-size: 18px;
+  padding-left: 50px;
 `;
 
 const SearchItem = styled.div`
