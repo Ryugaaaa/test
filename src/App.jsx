@@ -1,10 +1,11 @@
+import Hero from "./components/layout/Hero";
 import LayoutWrapper from "./components/layout/LayoutWrapper";
 import "./reset.css";
 
 function App() {
   return (
     <LayoutWrapper>
-      {/* hero */}
+      <Hero />
       {/* slider */}
     </LayoutWrapper>
   );
