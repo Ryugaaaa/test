@@ -1,4 +1,4 @@
-import Hero from "./components/layout/Hero";
+import Hero from "./components/Hero";
 import LayoutWrapper from "./components/layout/LayoutWrapper";
 import "./reset.css";
 

@@ -1,29 +1,47 @@
 import { styled } from "styled-components";
 import logo from "./../../img/logo.png";
 import icon from "./../../img/SearchIcon.png";
+import Burger from "./Burger";
 
 const Section = styled.div`
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Container = styled.div`
   max-width: 1420px;
   width: 100%;
-  height: 100px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    height: 80px;
+  }
 `;
 
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 0 0 20px;
+  }
 `;
 
 const Logo = styled.img`
   height: 68px;
   cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    height: 40px;
+  }
 `;
 
 const Text = styled.p`
@@ -32,29 +50,21 @@ const Text = styled.p`
   text-transform: uppercase;
   font-size: 22px;
   line-height: 27px;
-`;
 
-const Links = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const List = styled.ul`
-  display: flex;
-  list-style: none;
-`;
-
-const ListItem = styled.li`
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 18px;
-  padding-left: 50px;
+  @media only screen and (max-width: 768px) {
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
 `;
 
 const SearchItem = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Search = styled.input`
@@ -63,12 +73,20 @@ const Search = styled.input`
   padding: 10px;
   color: black;
   border: none;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid lightgray;
+
+  @media only screen and (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 const Icon = styled.img`
   height: 16px;
   cursor: pointer;
+
+  @media only screen and (max-width: 1100px) {
+    display: none;
+  }
 `;
 
 const Navbar = () => {
@@ -82,15 +100,7 @@ const Navbar = () => {
             Name
           </Text>
         </LogoContainer>
-        <Links>
-          <List>
-            <ListItem className="home">Home</ListItem>
-            <ListItem>Services</ListItem>
-            <ListItem>Projects</ListItem>
-            <ListItem>About</ListItem>
-            <ListItem>Contact</ListItem>
-          </List>
-        </Links>
+        <Burger />
         <SearchItem>
           <Search placeholder="Search Keyword ..." />
           <Icon src={icon} />
