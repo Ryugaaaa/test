@@ -20,6 +20,8 @@ const List = styled.ul`
     width: 100%;
     padding-top: 3rem;
     gap: 30px;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
