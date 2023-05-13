@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import BackgroundImg from "./../img/BackgroundImage.jpg";
 import Arrow from "./../img/Vector.png";
+import BlackArrow from "./../img/BlackArrow.png";
 
 const Section = styled.div`
   display: flex;
@@ -23,6 +24,7 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 12px 0 -4px #2b3252;
+  box-shadow: 0px 21px 32px -3px rgba(0, 0, 0, 0.75);
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -80,22 +82,23 @@ const Button = styled.button`
   cursor: pointer;
   background-image: url(${Arrow});
   background-repeat: no-repeat;
-  background-position: right 11px center;
-  background-size: 12px;
+  background-position: right 14px center;
+  background-size: 10px;
 
   &:hover {
     color: #000000;
     transition: 0.3s;
+    background-image: url(${BlackArrow});
     background-repeat: no-repeat;
-    background-position: right 11px center;
-    background-size: 14px;
-    background: rgba(255, 255, 255, 0.365);
+    background-position: right 12px center;
+    background-size: 13px;
+    background-color: rgba(255, 255, 255, 0.365);
   }
 `;
 
 const Hero = () => {
   return (
-    <Section>
+    <Section id="hero">
       <Container>
         <Left>
           <Title>

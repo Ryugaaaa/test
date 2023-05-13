@@ -40,7 +40,7 @@ const ListItem = styled.li`
     }
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 910px) {
     padding-left: 20px;
   }
 

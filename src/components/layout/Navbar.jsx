@@ -41,7 +41,7 @@ const Logo = styled.img`
   cursor: pointer;
 
   @media only screen and (max-width: 768px) {
-    height: 40px;
+    height: 50px;
   }
 `;
 
@@ -53,9 +53,7 @@ const Text = styled.p`
   line-height: 27px;
 
   @media only screen and (max-width: 768px) {
-    margin-left: 20px;
-    font-size: 12px;
-    line-height: 20px;
+    display: none;
   }
 `;
 
@@ -76,6 +74,10 @@ const Search = styled.input`
   border: none;
   border-bottom: 1px solid lightgray;
 
+  @media only screen and (max-width: 1200px) {
+    width: 150px;
+  }
+
   @media only screen and (max-width: 1100px) {
     display: none;
   }
@@ -86,6 +88,11 @@ const Icon = styled.img`
   cursor: pointer;
 
   @media only screen and (max-width: 1100px) {
+    height: 20px;
+    padding: 0 10px 0 5px;
+  }
+
+  @media only screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -95,7 +102,9 @@ const Navbar = () => {
     <Section>
       <Container>
         <LogoContainer>
-          <Logo src={logo} />
+          <a href="#hero">
+            <Logo src={logo} />
+          </a>
           <Text>
             Company <br />
             Name
