@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Slider from "./components/Swiper/Slider";
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Services />
       <Slider />
+      <About />
     </LayoutWrapper>
   );
 }

@@ -10,10 +10,15 @@ import slide1 from "./../../img/Slide1.jpg";
 import slide2 from "./../../img/Slide2.jpg";
 import slide3 from "./../../img/Slide3.jpg";
 import Arrow from "./../../img/Vector.png";
+import BlackArrow from "./../../img/BlackArrow.png";
 
 const Section = styled.div`
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 1700px) {
+    display: none;
+  }
 `;
 
 const Container = styled.div`
@@ -107,6 +112,16 @@ const Button1 = styled.button`
   background-position: right 14px center;
   background-size: 12px;
   cursor: pointer;
+
+  &:hover {
+    color: #000000;
+    transition: 0.3s;
+    background-image: url(${BlackArrow});
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 13px;
+    background-color: rgba(255, 255, 255, 0.365);
+  }
 `;
 
 const Slide2 = styled.div`
@@ -175,6 +190,16 @@ const Button2 = styled.button`
   background-position: right 14px center;
   background-size: 12px;
   cursor: pointer;
+
+  &:hover {
+    color: #000000;
+    transition: 0.3s;
+    background-image: url(${BlackArrow});
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 13px;
+    background-color: rgba(255, 255, 255, 0.365);
+  }
 `;
 
 const Slide3 = styled.div`
@@ -243,6 +268,16 @@ const Button3 = styled.button`
   background-position: right 14px center;
   background-size: 12px;
   cursor: pointer;
+
+  &:hover {
+    color: #000000;
+    transition: 0.3s;
+    background-image: url(${BlackArrow});
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 13px;
+    background-color: rgba(255, 255, 255, 0.365);
+  }
 `;
 
 export default function App() {
@@ -253,7 +288,7 @@ export default function App() {
       <Container>
         <Swiper
           onSwiper={setSwiperRef}
-          slidesPerView={1}
+          slidesPerView={3}
           centeredSlides={true}
           spaceBetween={100}
           pagination={{
@@ -267,8 +302,12 @@ export default function App() {
               slidesPerView: 2,
             },
             768: {
-              slidesPerView: 1,
+              slidesPerView: 2,
               spaceBetween: 100,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
             },
           }}
         >

@@ -12,11 +12,11 @@ const Container = styled.div`
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <Container>
+    <>
       <Navbar />
       {children}
       <Footer />
-    </Container>
+    </>
   );
 };
 
