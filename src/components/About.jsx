@@ -16,9 +16,11 @@ const Container = styled.div`
   width: 100%;
   height: 950px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     flex-direction: column;
-    height: 1vh;
+    height: auto;
+    margin-bottom: 20px;
+    align-items: center;
   }
 `;
 
@@ -54,7 +56,7 @@ const Right = styled.div`
   text-align: left;
   gap: 20px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     flex: 0;
     align-items: center;
     text-align: center;

@@ -17,7 +17,7 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: center;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     flex-direction: column;
   }
 `;
@@ -30,7 +30,7 @@ const Left = styled.div`
   align-items: center;
   gap: 35px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     gap: 5px;
     flex: 0;
   }
@@ -40,7 +40,7 @@ const Logo = styled.img`
   width: 210px;
   height: 70px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     width: 110px;
     height: 35px;
   }
@@ -55,7 +55,7 @@ const Title = styled.h2`
   color: #ffffff;
   opacity: 0.7;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     font-size: 8px;
   }
 `;
@@ -67,7 +67,7 @@ const Middle = styled.div`
   justify-content: center;
   gap: 45px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     gap: 0;
     align-items: center;
     flex: 0;
@@ -81,7 +81,7 @@ const List = styled.div`
   flex-direction: row;
   gap: 50px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     gap: 15px;
   }
 `;
@@ -95,7 +95,7 @@ const ListItem = styled.h1`
   color: #ffffff;
   cursor: pointer;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     font-size: 9px;
   }
 `;
@@ -110,7 +110,7 @@ const LogoContainer = styled.div`
 const Logos = styled.img`
   cursor: pointer;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     width: 41px;
     height: 16px;
   }
@@ -123,7 +123,7 @@ const Right = styled.div`
   justify-content: center;
   gap: 20px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     gap: 10px;
     flex: 0;
   }
@@ -134,7 +134,7 @@ const TopInput = styled.div`
   flex-direction: row;
   gap: 20px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     gap: 5px;
     flex-direction: column;
     align-items: center;
@@ -148,7 +148,7 @@ const TopInputItem = styled.input`
   border-radius: 8px;
   background-color: transparent;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     width: 115px;
     height: 20px;
     font-size: 8px;
@@ -158,7 +158,7 @@ const TopInputItem = styled.input`
 const BottomInput = styled.div`
   display: flex;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     justify-content: center;
     padding: 0 0 5px 0;
   }
@@ -171,7 +171,7 @@ const BottomInputItem = styled.input`
   border-radius: 8px;
   background-color: transparent;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1150px) {
     width: 240px;
     height: 60px;
     font-size: 10px;
