@@ -125,7 +125,7 @@ const Button = styled.button`
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <Left>
           <AboutImg src={AboutBg} />

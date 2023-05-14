@@ -34,10 +34,10 @@ const ListItem = styled.li`
   @media only screen and (max-width: 768px) {
     font-size: 30px;
     color: lightblue;
+  }
 
-    &:hover {
-      color: #629bae;
-    }
+  &:hover {
+    color: #629bae;
   }
 
   @media only screen and (max-width: 910px) {
@@ -53,11 +53,21 @@ const NavbarList = ({ open }) => {
   return (
     <Links>
       <List open={open}>
-        <ListItem>Home</ListItem>
-        <ListItem>Services</ListItem>
-        <ListItem>Projects</ListItem>
-        <ListItem>About</ListItem>
-        <ListItem>Contact</ListItem>
+        <a href="#home">
+          <ListItem>Home</ListItem>
+        </a>
+        <a href="#services">
+          <ListItem>Services</ListItem>
+        </a>
+        <a href="#projects">
+          <ListItem>Projects</ListItem>
+        </a>
+        <a href="#about">
+          <ListItem>About</ListItem>
+        </a>
+        <a href="#contact">
+          <ListItem>Contact</ListItem>
+        </a>
       </List>
     </Links>
   );

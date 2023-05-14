@@ -284,7 +284,7 @@ export default function App() {
   const [swiperRef, setSwiperRef] = useState(null);
 
   return (
-    <Section>
+    <Section id="projects">
       <Container>
         <Swiper
           onSwiper={setSwiperRef}

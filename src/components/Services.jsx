@@ -160,7 +160,7 @@ const MusicText = styled.h1`
 
 const Services = () => {
   return (
-    <Section>
+    <Section id="services">
       <Title>Services</Title>
       <Container>
         <Left>

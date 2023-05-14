@@ -99,7 +99,7 @@ const Icon = styled.img`
 
 const Navbar = () => {
   return (
-    <Section>
+    <Section id="home">
       <Container>
         <LogoContainer>
           <a href="#hero">

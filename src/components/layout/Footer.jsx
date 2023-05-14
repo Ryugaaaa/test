@@ -10,7 +10,6 @@ const Section = styled.div`
 
 const Container = styled.div`
   display: flex;
-  max-width: 1920px;
   width: 100%;
   height: 330px;
   background-color: #2b3252;
@@ -180,7 +179,7 @@ const BottomInputItem = styled.input`
 
 const Footer = () => {
   return (
-    <Section>
+    <Section id="contact">
       <Container>
         <Left>
           <Logo src={logo} />
